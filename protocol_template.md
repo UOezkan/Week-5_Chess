@@ -59,7 +59,7 @@ Daily Review : Linear Regression
 <span style="color:grey">
 
 ---
-## <span style="color:black"> __Use Cases in Business Life__ </span>
+## <span style="color:black"> __Some Use Cases in Business Life__ </span>
 
 <span style="color:grey">
 
@@ -152,14 +152,18 @@ To find the best-fitting line, we minimize the sum of squared residuals (SSR):
 
 <span style="color:grey">
 
-## <span style="color:black"> __| Summary |__ </span>
+## <span style="color:black"> __| - Key Takeaways -|__ </span>
 
 <span style="color:grey">
 
 * Linear regression models the relationship between a dependent variable and one or more independent variables.
 * We can divide linear regression into two categories:
     * Simple linear regression: cases in which we only have one explanatory variable
-    * Multiple linear regression: cases in which we have more than one explanatory variable - multiple linear regression is not so easy to display Linear Regression can approximate a relationship, but it cannot prove causality.
+    * Multiple linear regression: cases in which we have more than one explanatory variable - multiple linear regression is not so easy to display
+    * Linear regression can approximate a relationship, but it cannot prove causality.
+* Linear regression can approximate a relationship, but it cannot prove causality.
+* Correlation measures the strength of the relationship
+* Regression quantifies the nature of the relationship
 * The model assumes linearity, zero-mean error, exogeneity, homoscedasticity, and no multicollinearity.
     * Linearity: The target variable and the coefficients of the explanatory variables are linearly related.
     * Zero-Mean Error: The mean of all residuals is zero.
@@ -169,7 +173,6 @@ To find the best-fitting line, we minimize the sum of squared residuals (SSR):
 * Key evaluation metrics include RMSE, MSE, R², and adjusted R².
 * Multiple regression allows for more than one predictor.
 * Least squares criterion minimizes prediction errors to find the best fit.
-
 
 <span style="color:grey">
 
