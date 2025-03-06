@@ -155,7 +155,7 @@ Counts how often the model predicted correctly and how often it got confused.
 <span style="color:grey">
 
 ---
-## <span style="color:black"> __What Are OKRs?__ </span>
+## <span style="color:black"> __Objectives & Key Results__ </span>
 
 <span style="color:grey">
 
