@@ -184,12 +184,15 @@ Counts how often the model predicted correctly and how often it got confused.
 
 <span style="color:grey"> 
 
-* Objective: Improve the efficiency and accuracy of the fraud detection model
-    * Linearity: The target variable and the coefficients of the explanatory variables are linearly related.
+* Objective A: Improve the efficiency and accuracy of the fraud detection model
     * KR1: Increase model precision from 85% to 90% within six months.
     * KR2: Reduce false positives by 20% to avoid unnecessary account blocks.
     * KR3: Automate real-time fraud alerts, reducing response time from 10 minutes to 4 minutes. 
 
+* Objective B: Improve the ...
+    * KR1: Increase ...
+    * KR2: Reduce ...
+    * KR3: Enhance ...
 ![alt text](OKR.png) 
 
 <span style="color:grey">
