@@ -1,15 +1,15 @@
-# Wednesday, 18.02.2025
+# Daily Review | Designing Data Products
 <span style="color:grey">
-Daily Review : Linear Regression
+Friday, 07.03.2025
 </span>
 
 ---
 ## <span style="color:black"> __Basic Overview__ </span>
  
 
-* <span style="color:grey"> short bullet points
-* <span style="color:grey"> for what you did
-* <span style="color:grey"> example: more practice with python
+* <span style="color:grey"> Exploratory analysis - understand what happened in the past
+* <span style="color:grey"> Predictive analyis - predict what will happen
+* <span style="color:grey"> Predict what, for whom and for what purpose?
 
 ---
 ##  __Schedule__
@@ -18,77 +18,87 @@ Daily Review : Linear Regression
 |Time|Content|
 |---|---|
 |09:00 - 10:00|Daily Review|
-|10:00 - 11:30|Lecture|
-|11:30 - 12:30|Other theoretical inputs|
+|10:00 - 12:30|Working on Team Project|
 |12:30 - 13:30|Lunch Break| 
-|13:30 - 15:00|Practical exercises|
-|15:00 - 16:00|Exercises and Ending|
-|16:00 - 17:00|Stand-up, Exercises and Ending|
+|13:30 - 16:00|Working on Team Project|
+|16:00 - 16:20|Stand-up|
+|16:20 - 18:00|Working on Team Project|
 
-
-## <span style="color:black"> __Who Invented Linear Regression?__ </span>
+## <span style="color:black"> __Product = Customer x Business x Technology__ </span>
 
 <span style="color:grey">
 
-* Sir Francis Galton introduced linear regression in the late 19th century.   Sir Francis Galton (1885) introduced the idea of “regression” to the research community in a study examining the relationship between fathers' and sons' heights.
-* Karl Pearson and Sir Ronald Fisher, who contributed significantly to its mathematical foundation, later formalized the method. 
+* Usability
+* Business viability
+* Feasibility
+  
+Value = product of the three
+  
+</span>
+
+## <span style="color:black"> Measuring Success </span>
+
+* The first model you build should be the simplest model that could address the product needs.
+* Business performance: measured usually by one KPI (key performance indicator)
+* Model performance: an offline metric that captures how well the model will fit the business need
+
+
+## <span style="color:black"> _Note: The business metric is independent from the model metric... It is a measure of the product success._ </span>
+
+---
+## <span style="color:black"> __Examples of Measuring Business Performance__ </span>
+
+<span style="color:grey">
+
+Business metrics:
+* Click through rate (CTR) - for recommenders
+* Usage - model that generates html from hand drawn diagrams
+* Adoption by finance team - internal revenue forecasting
 
 </span>
 
-## <span style="color:black"> Motivation for Linear Regression </span>
+## <span style="color:black"> Measuring Success </span>
 
-* Linear regression helps in understanding and quantifying relationships between variables. It is widely used for:
-  * Prediction: Forecasting values based on past data - introduction to ML.
-  * Explanation: Identifying relationships between variables.
-    
----
-## <span style="color:black"> __Goals of Linear Regression__ </span>
+Regression:
+* RMSE, RMSLE
+* MAPE ( mean absolute percentage error) - accuracy as a ratio
 
-<span style="color:grey">
+Classification:
+* Accuracy
+* Precision
+* Recall
 
-* Establish the relationship between dependent and independent variables.  
-* The aim is to utilize this relationship for prediction and decision-making.
-* Analyze the effect of one or more explanatory variables on an outcome.
-* The model assumes linearity, zero-mean error, exogeneity, homoscedasticity, and no multicollinearity.
-    * Linearity: The target variable and the coefficients of the explanatory variables are linearly related.
-    * Zero-Mean Error: The mean of all residuals is zero.
-    * Strict Exogeneity: All the explanatory variables are uncorrelated with the residual.
-    * Homoscedasticity: The variance of the residuals across a single observation remains the same.
-    * No Multicollinearity: All the explanatory variables are linearly independent.
 
 <span style="color:grey">
 
 ---
-## <span style="color:black"> __Some Use Cases in Business Life__ </span>
+## <span style="color:black"> __Relationship Between Business Performance & Model Performance__ </span>
 
 <span style="color:grey">
 
-* Marketing & Sales: Predicting customer spending based on demographics. 
-* Finance: Forecasting stock prices based on historical trends.
-* Whenever a linear relationship exists between variables. Surprise surprise!
-* Linear regression might be used in domains like economics, medicine, finance, and marketing where there is a data set of variables.
-* For predictive modeling :) , trend analysis, and risk assessment.
+* Thinking of the business value of your model and the cost of being wrong can help you choose the right model metric.
+* Always start from the value!
   
 <span style="color:grey">
 
 ---
-## <span style="color:black"> __Relationship to Statistical Significance__ </span>
+## <span style="color:black"> __Error Analysis__ </span>
 
 <span style="color:grey">
 
-* Linear regression relies on statistical significance to validate relationships. P-values and confidence intervals are used to determine if coefficients are meaningful. 
-* Does A/B Testing use Linear Regression?
-* A/B tests typically use statistical hypothesis testing (e.g., t-tests). However, linear regression can be used to analyze the effect of multiple factors on the outcome of A/B tests.
+Going beyond aggregated metrics
+* Most model performance metrics we’ve seen are aggregated metrics
+* They help determine whether a model has learned well from a dataset or needs improvement
+* Next step: examine results and errors to understand why and how is the model failing or succeeding
 
 <span style="color:grey">
 
 ---
-## <span style="color:black"> __How?__ </span>
+## <span style="color:black"> __Types of supervised learning__ </span>
 
 <span style="color:grey">
 
-* Linear Regression model uses training data to establish a general rule for estimation.
-* Understand whether an independent variable (X) is associated with a dependent variable (Y) and quantify this relationship.
+![alt text](images/data_leakage_diabetes.png)
 
 <span style="color:grey">
 
