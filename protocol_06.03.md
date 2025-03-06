@@ -91,11 +91,10 @@ Classification:
 <span style="color:grey">
 
 ---
-## <span style="color:black"> __Error Analysis__ </span>
+## <span style="color:black"> __Going Beyond Aggregated Metrics__ </span>
 
 <span style="color:grey">
 
-Going beyond aggregated metrics
 * Most model performance metrics we’ve seen are aggregated metrics
 * They help determine whether a model has learned well from a dataset or needs improvement
 * Next step: examine results and errors to understand why and how is the model failing or succeeding
