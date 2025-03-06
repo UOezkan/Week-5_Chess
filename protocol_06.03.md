@@ -38,7 +38,7 @@ Value = product of the three
 
 ## <span style="color:black"> Measuring Success </span>
 
-* The first model you build should be the simplest model that could address the product needs.
+* The first model should be the simplest model that could address the product needs.
 * Business performance: measured usually by one KPI (key performance indicator)
 * Model performance: an offline metric that captures how well the model will fit the business need
 
@@ -133,68 +133,75 @@ Counts how often the model predicted correctly and how often it got confused.
 * False Positive: false alarm / type I error
 * False Negative: missed detection / type II error
 
-
-
-<span style="color:grey">
-
----
-## <span style="color:black"> __Types of Linear Regression__ </span>
-
-<span style="color:grey">
-
-* Simple Linear Regression: One independent variable.
-* Multiple Linear Regression: More than one independent variable.
+![alt text](Screenshot.png) 
 
 <span style="color:grey">
 
 ---
-## <span style="color:black"> __Least Squares Criterion__ </span>
+## <span style="color:black"> __Residual Analysis for Regression__ </span>
 
 <span style="color:grey">
 
-To find the best-fitting line, we minimize the sum of squared residuals (SSR):
-* SST (Total Sum of Squares) = Total variability in Y.
-* SSE (Explained Sum of Squares) = Variability explained by the model.
-* SSR (Sum of Squared Residuals) = Remaining unexplained variability.
+* This is like EDA again but on residuals (predicted - observed)
+* Plot residuals /and standardized residuals vs predicted
+* We want our residuals to have no patterns, to be symmetrically distributed, centered in the middle of the plot
+
+![alt text](img_p18_1.png) 
+
+* IF NOT.. then there is room for improvement in the model.
+
+![alt text](img_p18_2.png) 
 
 <span style="color:grey">
 
 ---
-## <span style="color:black"> __Evaluation Metrics__ </span>
+## <span style="color:black"> __What Are OKRs?__ </span>
 
 <span style="color:grey">
 
-* Root Mean Squared Error (RMSE): Measures model accuracy.
-* Adjusted R²: Adjusts R² for the number of independent variables. 
-    * Adjusted R²: will penalize us for adding more features that don't improve our existing model. For a simple linear regression and adjusted will be nearly the same. MSE (Mean Squared Error): SSR divided by sample size.
-* R (Correlation Coefficient): Measures relationship strength (-1 to 1).
-* R² (Coefficient of Determination): Measures variance explained by the model.
+* OKRs drive strategic change, innovation, or significant improvement.
+* Use OKRs to measure and maintain performance over time.
+* Main performance evaluation tools at tech companies  
+* OKRs (Objectives and Key Results) are a goal-setting framework used to align teams and individuals with business objectives. They focus on setting ambitious, outcome-driven goals and measuring success through specific key results.
+* Objective (O) – A clear, inspiring, and time-bound goal.
+* Key Results (KRs) – Measurable outcomes that indicate progress toward the objective.
+
+---
+<span style="color:grey">
+
+## <span style="color:black"> __Characteristics of OKRs:__ </span>
 
 <span style="color:grey">
 
-## <span style="color:black"> __| - Key Takeaways -|__ </span>
+* Ambitious – OKRs encourage stretch goals beyond just maintaining performance.
+* Time-Bound – Typically reviewed quarterly or annually.
+* Transparent – Shared across the organization for alignment.
+* Outcome-Oriented – Focuses on results, not just effort.
+* Challenging - Success rate should be around 67%
 
-<span style="color:grey">
+---
+## <span style="color:black"> __Example of an OKR for a Data Scientist:__ </span>
 
-* Linear regression models the relationship between a dependent variable and one or more independent variables.
-* We can divide linear regression into two categories:
-    * Simple linear regression: cases in which we only have one explanatory variable
-    * Multiple linear regression: cases in which we have more than one explanatory variable - multiple linear regression is not so easy to display
-    * Linear regression can approximate a relationship, but it cannot prove causality.
-* Linear regression can approximate a relationship, but it cannot prove causality.
-* Correlation measures the strength of the relationship
-* Regression quantifies the nature of the relationship
-* The model assumes linearity, zero-mean error, exogeneity, homoscedasticity, and no multicollinearity.
+<span style="color:grey"> 
+
+* Objective: Improve the efficiency and accuracy of the fraud detection model
     * Linearity: The target variable and the coefficients of the explanatory variables are linearly related.
-    * Zero-Mean Error: The mean of all residuals is zero.
-    * Strict Exogeneity: All the explanatory variables are uncorrelated with the residual.
-    * Homoscedasticity: The variance of the residuals across a single observation remains the same.
-    * No Multicollinearity: All the explanatory variables are linearly independent.
-* Key evaluation metrics include RMSE, MSE, R², and adjusted R².
-* Multiple regression allows for more than one predictor.
-* Least squares criterion minimizes prediction errors to find the best fit.
+    * KR1: Increase model precision from 85% to 90% within six months.
+    * KR2: Reduce false positives by 20% to avoid unnecessary account blocks.
+    * KR3: Automate real-time fraud alerts, reducing response time from 10 minutes to 4 minutes. 
+
+![alt text](OKR.png) 
 
 <span style="color:grey">
+
+---
+---
+## Helpful References
+
+- [OKRs: the ultimate guide to objectives and key results](https://www.atlassian.com/agile/agile-at-scale/okr)
+- [OKR Examples for Data Science](https://okrstudio.com/okr-examples/data-science)
+
+
 
 
 
