@@ -72,6 +72,15 @@ Classification:
 <span style="color:grey">
 
 ---
+## <span style="color:black"> __Business Performance vs. Model Performance__ </span>
+
+<span style="color:grey">
+
+![alt text](BPM.png)
+
+<span style="color:grey">
+
+---
 ## <span style="color:black"> __Relationship Between Business Performance & Model Performance__ </span>
 
 <span style="color:grey">
@@ -98,7 +107,7 @@ Going beyond aggregated metrics
 
 <span style="color:grey">
 
-![alt text](images/data_leakage_diabetes.png)
+![alt text](img_p15.png)
 
 <span style="color:grey">
 
