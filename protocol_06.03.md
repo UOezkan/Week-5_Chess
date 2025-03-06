@@ -76,7 +76,7 @@ Classification:
 
 <span style="color:grey">
 
-![alt text](BPM.png)
+![alt text](Business_vs_Model_Performance_4.png)
 
 <span style="color:grey">
 
@@ -99,6 +99,8 @@ Going beyond aggregated metrics
 * Most model performance metrics we’ve seen are aggregated metrics
 * They help determine whether a model has learned well from a dataset or needs improvement
 * Next step: examine results and errors to understand why and how is the model failing or succeeding
+* Validation and Iteration
+* Note: Performance metrics can be deceptive, on highly imbalanced datasets a classifier can reach very high accuracy without any predictive power
 
 <span style="color:grey">
 
@@ -112,27 +114,26 @@ Going beyond aggregated metrics
 <span style="color:grey">
 
 ---
-## <span style="color:black"> Why and When do I Need to Train a Regression Model? </span>
+## <span style="color:black"> Validate The Model | Inspect How It Is Performing </span>
 
 <span style="color:grey">
 
-* To explain the data using a regression model.
-* To make predictions based on known inputs. E.g., - Notebook5 - Solution includes 20% of test data to train the model 
+* Regression: looking at residuals, for example doing EDA on residuals and inspecting the outliers
+* Classification: one can start with a confusion matrix, breaking results in true class and predictions
 
 <span style="color:grey">
 
 ---
 
-## <span style="color:black"> __The Linear Equation__ </span>
+## <span style="color:black"> __Confusion Matrix for Classification__ </span>
 
 <span style="color:grey">
 
-* A simple linear regression model follows this equation: Y = β0 + β1X + ε Where:
-* Y = Dependent variable (target)
-* X = Independent variable (feature)
-* β0 = Intercept
-* β1 = Coefficient (slope)
-* ε = Error term
+Counts how often the model predicted correctly and how often it got confused.
+* False Positive: false alarm / type I error
+* False Negative: missed detection / type II error
+
+
 
 <span style="color:grey">
 
